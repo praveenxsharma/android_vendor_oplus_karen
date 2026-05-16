@@ -75,37 +75,10 @@ LOCAL_CHECK_ELF_FILES := false
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := android.hardware.gatekeeper@1.0-service
-LOCAL_MODULE_CLASS := EXECUTABLES
-LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR_EXECUTABLES)/hw
-LOCAL_SRC_FILES := bin/hw/android.hardware.gatekeeper@1.0-service
-LOCAL_MODULE_TAGS := optional
-LOCAL_CHECK_ELF_FILES := false
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := android.hardware.graphics.allocator@4.0-service-mediatek
 LOCAL_MODULE_CLASS := EXECUTABLES
 LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR_EXECUTABLES)/hw
 LOCAL_SRC_FILES := bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
-LOCAL_MODULE_TAGS := optional
-LOCAL_CHECK_ELF_FILES := false
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := android.hardware.graphics.composer@2.3-service
-LOCAL_MODULE_CLASS := EXECUTABLES
-LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR_EXECUTABLES)/hw
-LOCAL_SRC_FILES := bin/hw/android.hardware.graphics.composer@2.3-service
-LOCAL_MODULE_TAGS := optional
-LOCAL_CHECK_ELF_FILES := false
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := android.hardware.health@2.1-service
-LOCAL_MODULE_CLASS := EXECUTABLES
-LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR_EXECUTABLES)/hw
-LOCAL_SRC_FILES := bin/hw/android.hardware.health@2.1-service
 LOCAL_MODULE_TAGS := optional
 LOCAL_CHECK_ELF_FILES := false
 include $(BUILD_PREBUILT)
@@ -142,15 +115,6 @@ LOCAL_MODULE := android.hardware.thermal@2.0-service.mtk
 LOCAL_MODULE_CLASS := EXECUTABLES
 LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR_EXECUTABLES)/hw
 LOCAL_SRC_FILES := bin/hw/android.hardware.thermal@2.0-service.mtk
-LOCAL_MODULE_TAGS := optional
-LOCAL_CHECK_ELF_FILES := false
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := android.hardware.wifi@1.0-service-lazy
-LOCAL_MODULE_CLASS := EXECUTABLES
-LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR_EXECUTABLES)/hw
-LOCAL_SRC_FILES := bin/hw/android.hardware.wifi@1.0-service-lazy
 LOCAL_MODULE_TAGS := optional
 LOCAL_CHECK_ELF_FILES := false
 include $(BUILD_PREBUILT)
@@ -575,15 +539,6 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_CHECK_ELF_FILES := false
 include $(BUILD_PREBUILT)
 
-include $(CLEAR_VARS)
-LOCAL_MODULE := android.hardware.thermal@1.0-impl
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_RELATIVE_PATH := hw
-LOCAL_SRC_FILES_64 := lib64/hw/android.hardware.thermal@1.0-impl.so
-LOCAL_SRC_FILES_32 := lib/hw/android.hardware.thermal@1.0-impl.so
-LOCAL_MULTILIB := both
-LOCAL_MODULE_TAGS := optional
-LOCAL_CHECK_ELF_FILES := false
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -640,25 +595,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_CHECK_ELF_FILES := false
 include $(BUILD_PREBUILT)
 
-include $(CLEAR_VARS)
-LOCAL_MODULE := android.hardware.bluetooth.audio@2.0-impl
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_RELATIVE_PATH := hw
-LOCAL_SRC_FILES_64 := lib64/hw/android.hardware.bluetooth.audio@2.0-impl.so
-LOCAL_MULTILIB := 64
-LOCAL_MODULE_TAGS := optional
-LOCAL_CHECK_ELF_FILES := false
-include $(BUILD_PREBUILT)
 
-include $(CLEAR_VARS)
-LOCAL_MODULE := android.hardware.bluetooth.audio@2.1-impl
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_RELATIVE_PATH := hw
-LOCAL_SRC_FILES_64 := lib64/hw/android.hardware.bluetooth.audio@2.1-impl.so
-LOCAL_MULTILIB := 64
-LOCAL_MODULE_TAGS := optional
-LOCAL_CHECK_ELF_FILES := false
-include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := vendor.mediatek.hardware.bluetooth.audio@2.1-impl

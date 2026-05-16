@@ -4,18 +4,12 @@
 PRODUCT_PACKAGES += \
     android.hardware.audio.service.mediatek \
     android.hardware.bluetooth@1.1-service-mediatek \
-    android.hardware.gatekeeper@1.0-service \
     android.hardware.graphics.allocator@4.0-service-mediatek \
-    android.hardware.graphics.composer@2.3-service \
-    android.hardware.health@2.1-service \
     android.hardware.keymaster@4.1-service.trustonic \
     android.hardware.neuralnetworks@1.3-service-mtk-neuron \
     android.hardware.sensors@2.0-service.multihal-mediatek \
     android.hardware.thermal@2.0-service.mtk \
-    android.hardware.wifi@1.0-service-lazy \
     android.hardware.bluetooth@1.1-impl-mediatek \
-    android.hardware.bluetooth.audio@2.0-impl \
-    android.hardware.bluetooth.audio@2.1-impl \
     android.hardware.bluetooth@1.1.vendor \
     android.hardware.bluetooth.audio@2.1.vendor \
     android.hardware.audio@7.0.vendor \
@@ -24,7 +18,6 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@4.0-impl-mediatek \
     android.hardware.graphics.allocator@4.0-impl-mediatek \
     android.hardware.thermal@2.0-impl \
-    android.hardware.thermal@1.0-impl \
     audio.primary.mt6893 \
     camerahalserver \
     ccci_mdinit \
