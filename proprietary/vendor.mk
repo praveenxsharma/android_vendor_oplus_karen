@@ -1,28 +1,86 @@
 # Copyright (C) 2024 The LineageOS Project
 # SPDX-License-Identifier: Apache-2.0
 
-# Prebuilt vendor blobs for OnePlus Nord 2T (karen)
-# Generated from OxygenOS A13 Indian build CPH2401_11_A.01
-
 PRODUCT_PACKAGES += \
-    android.hardware.boot@1.2-service \
-    android.hardware.gatekeeper@1.0-service \
-    android.hardware.keymaster@4.1-service.trustonic \
-    android.hardware.health@2.1-service \
-    android.hardware.graphics.composer@2.3-service \
-    android.hardware.graphics.allocator@4.0-service-mediatek \
     android.hardware.audio.service.mediatek \
     android.hardware.bluetooth@1.1-service-mediatek \
-    camerahalserver \
-    mtkfusionrild \
-    conninfra_loader \
-    nvram_daemon \
-    vendor.mediatek.hardware.mtkpower@1.0-service \
+    android.hardware.boot@1.2-service \
+    android.hardware.gatekeeper@1.0-service \
+    android.hardware.graphics.allocator@4.0-service-mediatek \
+    android.hardware.graphics.composer@2.3-service \
+    android.hardware.health@2.1-service \
+    android.hardware.keymaster@4.1-service.trustonic \
+    android.hardware.neuralnetworks@1.3-service-mtk-neuron \
     android.hardware.sensors@2.0-service.multihal-mediatek \
     android.hardware.thermal@2.0-service.mtk \
     android.hardware.wifi@1.0-service-lazy \
-    hostapd \
-    wpa_supplicant \
+    android.hardware.bluetooth@1.1-impl-mediatek \
+    android.hardware.bluetooth.audio@2.0-impl \
+    android.hardware.bluetooth.audio@2.1-impl \
+    android.hardware.bluetooth@1.1.vendor \
+    android.hardware.bluetooth.audio@2.1.vendor \
+    android.hardware.audio@7.0.vendor \
+    android.hardware.audio.common@7.0.vendor \
+    android.hardware.audio.effect@7.0.vendor \
+    android.hardware.graphics.mapper@4.0-impl-mediatek \
+    android.hardware.graphics.allocator@4.0-impl-mediatek \
+    android.hardware.thermal@2.0-impl \
+    android.hardware.thermal@1.0-impl \
+    audio.primary.mt6893 \
+    camerahalserver \
+    ccci_mdinit \
+    ccci_rpcd \
+    conninfra_loader \
+    conninfra.ko \
+    conninfra_cfg \
+    gatekeeper.trustonic \
+    gralloc.default \
+    hostapd_vendor \
+    kmsetkey.trustonic \
+    libGLES_mali \
+    libGLES_mali_32 \
+    libMcClient \
+    libMcGatekeeper \
+    libMcTeeSoter \
+    libaudiofoundation.vendor \
+    libaudiopreprocessing \
+    libaudiopreprocessing_32 \
+    libbluetooth_audio_session \
+    libcam.halsensor \
+    libccci_util \
+    libcustom_nvram \
+    libdrm.vendor \
+    libfile_op \
+    libmtk-fusion-ril-prop-vsim \
+    libmtk-ril \
+    libmtkmipc-ril \
+    libmtkrillog \
+    libmtkrilutils \
+    libnvram \
+    libnvram_sec \
+    libsensorndkbridge \
+    libthermalalgo \
+    libwifi-hal-mt66xx \
+    libwpa_client \
     mcDriverDaemon \
+    mtkfusionrild \
+    nvram_daemon \
+    sensors.mt6893 \
+    thermal_hal \
+    vendor.mediatek.hardware.bluetooth.audio@2.1-impl \
+    vendor.mediatek.hardware.bluetooth.audio@2.2-impl \
+    vendor.mediatek.hardware.mtkpower@1.0-service \
+    vendor.mediatek.hardware.mtkpower@1.0.vendor \
+    vendor.mediatek.hardware.mtkpower@1.1.vendor \
+    vendor.mediatek.hardware.mtkpower@1.2.vendor \
+    vendor.mediatek.hardware.nvram@1.0.vendor \
+    vendor.mediatek.hardware.nvram@1.1.vendor \
+    vendor.mediatek.hardware.nvram@1.1-impl \
+    vendor.trustonic.soter@1.0-service \
     vendor.trustonic.tee@1.1-service \
-    vendor.trustonic.soter@1.0-service
+    vendor.trustonic.tee@1.0.vendor \
+    vendor.trustonic.tee@1.1.vendor \
+    vendor.trustonic.tee.tui@1.0.vendor \
+    vibrator.default \
+    vulkan.mali \
+    wpa_supplicant_vendor
