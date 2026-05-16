@@ -4,7 +4,6 @@
 PRODUCT_PACKAGES += \
     android.hardware.audio.service.mediatek \
     android.hardware.bluetooth@1.1-service-mediatek \
-    android.hardware.boot@1.2-service \
     android.hardware.gatekeeper@1.0-service \
     android.hardware.graphics.allocator@4.0-service-mediatek \
     android.hardware.graphics.composer@2.3-service \
