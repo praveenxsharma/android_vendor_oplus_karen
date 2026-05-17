@@ -10,11 +10,6 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@2.0-service.multihal-mediatek \
     android.hardware.thermal@2.0-service.mtk \
     android.hardware.bluetooth@1.1-impl-mediatek \
-    android.hardware.bluetooth@1.1.vendor \
-    android.hardware.bluetooth.audio@2.1.vendor \
-    android.hardware.audio@7.0.vendor \
-    android.hardware.audio.common@7.0.vendor \
-    android.hardware.audio.effect@7.0.vendor \
     android.hardware.graphics.mapper@4.0-impl-mediatek \
     android.hardware.graphics.allocator@4.0-impl-mediatek \
     android.hardware.thermal@2.0-impl \
@@ -26,22 +21,15 @@ PRODUCT_PACKAGES += \
     conninfra.ko \
     conninfra_cfg \
     gatekeeper.trustonic \
-    gralloc.default \
-    hostapd_vendor \
     kmsetkey.trustonic \
     libGLES_mali \
     libGLES_mali_32 \
     libMcClient \
     libMcGatekeeper \
     libMcTeeSoter \
-    libaudiofoundation.vendor \
-    libaudiopreprocessing \
-    libaudiopreprocessing_32 \
-    libbluetooth_audio_session \
     libcam.halsensor \
     libccci_util \
     libcustom_nvram \
-    libdrm.vendor \
     libfile_op \
     libmtk-fusion-ril-prop-vsim \
     libmtk-ril \
@@ -50,9 +38,7 @@ PRODUCT_PACKAGES += \
     libmtkrilutils \
     libnvram \
     libnvram_sec \
-    libsensorndkbridge \
     libthermalalgo \
-    libwifi-hal-mt66xx \
     libwpa_client \
     mcDriverDaemon \
     mtkfusionrild \
@@ -62,9 +48,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.bluetooth.audio@2.1-impl \
     vendor.mediatek.hardware.bluetooth.audio@2.2-impl \
     vendor.mediatek.hardware.mtkpower@1.0-service \
-    vendor.mediatek.hardware.mtkpower@1.0.vendor \
-    vendor.mediatek.hardware.mtkpower@1.1.vendor \
-    vendor.mediatek.hardware.mtkpower@1.2.vendor \
     vendor.mediatek.hardware.nvram@1.0.vendor \
     vendor.mediatek.hardware.nvram@1.1.vendor \
     vendor.mediatek.hardware.nvram@1.1-impl \
@@ -73,6 +56,4 @@ PRODUCT_PACKAGES += \
     vendor.trustonic.tee@1.0.vendor \
     vendor.trustonic.tee@1.1.vendor \
     vendor.trustonic.tee.tui@1.0.vendor \
-    vibrator.default \
     vulkan.mali \
-    wpa_supplicant_vendor

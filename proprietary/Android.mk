@@ -128,17 +128,6 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_CHECK_ELF_FILES := false
 include $(BUILD_PREBUILT)
 
-include $(CLEAR_VARS)
-LOCAL_MODULE := hostapd_vendor
-LOCAL_MODULE_CLASS := EXECUTABLES
-LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR_EXECUTABLES)/hw
-LOCAL_MODULE_STEM := hostapd
-LOCAL_SRC_FILES := bin/hw/hostapd
-LOCAL_MODULE_TAGS := optional
-LOCAL_CHECK_ELF_FILES := false
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := mtkfusionrild
 LOCAL_MODULE_CLASS := EXECUTABLES
 LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR_EXECUTABLES)/hw
@@ -174,17 +163,6 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_CHECK_ELF_FILES := false
 include $(BUILD_PREBUILT)
 
-include $(CLEAR_VARS)
-LOCAL_MODULE := wpa_supplicant_vendor
-LOCAL_MODULE_CLASS := EXECUTABLES
-LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR_EXECUTABLES)/hw
-LOCAL_MODULE_STEM := wpa_supplicant
-LOCAL_SRC_FILES := bin/hw/wpa_supplicant
-LOCAL_MODULE_TAGS := optional
-LOCAL_CHECK_ELF_FILES := false
-include $(BUILD_PREBUILT)
-
-# ----------------------------------------------------------------
 # Shared Libraries — 64-bit
 # ----------------------------------------------------------------
 
@@ -207,27 +185,6 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_CHECK_ELF_FILES := false
 include $(BUILD_PREBUILT)
 
-include $(CLEAR_VARS)
-LOCAL_MODULE := libaudiofoundation.vendor
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_STEM := libaudiofoundation
-LOCAL_SRC_FILES_64 := lib64/libaudiofoundation.so
-LOCAL_MULTILIB := 64
-LOCAL_MODULE_TAGS := optional
-LOCAL_CHECK_ELF_FILES := false
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := libbluetooth_audio_session
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_SRC_FILES_64 := lib64/libbluetooth_audio_session.so
-LOCAL_MULTILIB := 64
-LOCAL_MODULE_TAGS := optional
-LOCAL_CHECK_ELF_FILES := false
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := libcam.halsensor
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_SRC_FILES_64 := lib64/libcam.halsensor.so
 LOCAL_MULTILIB := 64
@@ -254,17 +211,6 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_CHECK_ELF_FILES := false
 include $(BUILD_PREBUILT)
 
-include $(CLEAR_VARS)
-LOCAL_MODULE := libdrm.vendor
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_STEM := libdrm
-LOCAL_SRC_FILES_64 := lib64/libdrm.so
-LOCAL_MULTILIB := 64
-LOCAL_MODULE_TAGS := optional
-LOCAL_CHECK_ELF_FILES := false
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := libfile_op
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_SRC_FILES_64 := lib64/libfile_op.so
@@ -339,17 +285,6 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_CHECK_ELF_FILES := false
 include $(BUILD_PREBUILT)
 
-include $(CLEAR_VARS)
-LOCAL_MODULE := libsensorndkbridge
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_SRC_FILES_64 := lib64/libsensorndkbridge.so
-LOCAL_MULTILIB := 64
-LOCAL_MODULE_TAGS := optional
-LOCAL_CHECK_ELF_FILES := false
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := libwifi-hal-mt66xx
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_STEM := libwifi-hal
 LOCAL_SRC_FILES_64 := lib64/libwifi-hal.so
@@ -365,39 +300,6 @@ LOCAL_SRC_FILES_64 := lib64/libwpa_client.so
 LOCAL_MULTILIB := 64
 LOCAL_MODULE_TAGS := optional
 LOCAL_CHECK_ELF_FILES := false
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := vendor.mediatek.hardware.mtkpower@1.0.vendor
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_STEM := vendor.mediatek.hardware.mtkpower@1.0
-LOCAL_SRC_FILES_64 := lib64/vendor.mediatek.hardware.mtkpower@1.0.so
-LOCAL_MULTILIB := 64
-LOCAL_MODULE_TAGS := optional
-LOCAL_CHECK_ELF_FILES := false
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := vendor.mediatek.hardware.mtkpower@1.1.vendor
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_STEM := vendor.mediatek.hardware.mtkpower@1.1
-LOCAL_SRC_FILES_64 := lib64/vendor.mediatek.hardware.mtkpower@1.1.so
-LOCAL_MULTILIB := 64
-LOCAL_MODULE_TAGS := optional
-LOCAL_CHECK_ELF_FILES := false
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := vendor.mediatek.hardware.mtkpower@1.2.vendor
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_STEM := vendor.mediatek.hardware.mtkpower@1.2
-LOCAL_SRC_FILES_64 := lib64/vendor.mediatek.hardware.mtkpower@1.2.so
-LOCAL_MULTILIB := 64
-LOCAL_MODULE_TAGS := optional
-LOCAL_CHECK_ELF_FILES := false
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := vendor.mediatek.hardware.nvram@1.0.vendor
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_STEM := vendor.mediatek.hardware.nvram@1.0
@@ -454,17 +356,6 @@ include $(BUILD_PREBUILT)
 # ----------------------------------------------------------------
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := gralloc.default
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_RELATIVE_PATH := hw
-LOCAL_SRC_FILES_64 := lib64/hw/gralloc.default.so
-LOCAL_SRC_FILES_32 := lib/hw/gralloc.default.so
-LOCAL_MULTILIB := both
-LOCAL_MODULE_TAGS := optional
-LOCAL_CHECK_ELF_FILES := false
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := android.hardware.graphics.mapper@4.0-impl-mediatek
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_RELATIVE_PATH := hw
@@ -502,17 +393,6 @@ LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_RELATIVE_PATH := hw
 LOCAL_SRC_FILES_64 := lib64/hw/sensors.mt6893.so
 LOCAL_MULTILIB := 64
-LOCAL_MODULE_TAGS := optional
-LOCAL_CHECK_ELF_FILES := false
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := vibrator.default
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_RELATIVE_PATH := hw
-LOCAL_SRC_FILES_64 := lib64/hw/vibrator.default.so
-LOCAL_SRC_FILES_32 := lib/hw/vibrator.default.so
-LOCAL_MULTILIB := both
 LOCAL_MODULE_TAGS := optional
 LOCAL_CHECK_ELF_FILES := false
 include $(BUILD_PREBUILT)
@@ -655,87 +535,10 @@ include $(BUILD_PREBUILT)
 
 # ----------------------------------------------------------------
 # Audio HIDL libs
-# ----------------------------------------------------------------
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := android.hardware.audio@7.0.vendor
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_STEM := android.hardware.audio@7.0
-LOCAL_SRC_FILES_64 := lib64/android.hardware.audio@7.0.so
-LOCAL_MULTILIB := 64
-LOCAL_MODULE_TAGS := optional
-LOCAL_CHECK_ELF_FILES := false
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := android.hardware.audio.common@7.0.vendor
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_STEM := android.hardware.audio.common@7.0
-LOCAL_SRC_FILES_64 := lib64/android.hardware.audio.common@7.0.so
-LOCAL_MULTILIB := 64
-LOCAL_MODULE_TAGS := optional
-LOCAL_CHECK_ELF_FILES := false
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := android.hardware.audio.effect@7.0.vendor
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_STEM := android.hardware.audio.effect@7.0
-LOCAL_SRC_FILES_64 := lib64/android.hardware.audio.effect@7.0.so
-LOCAL_MULTILIB := 64
-LOCAL_MODULE_TAGS := optional
-LOCAL_CHECK_ELF_FILES := false
-include $(BUILD_PREBUILT)
-
-# ----------------------------------------------------------------
 # Bluetooth HIDL libs
-# ----------------------------------------------------------------
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := android.hardware.bluetooth@1.1.vendor
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_STEM := android.hardware.bluetooth@1.1
-LOCAL_SRC_FILES_64 := lib64/android.hardware.bluetooth@1.1.so
-LOCAL_MULTILIB := 64
-LOCAL_MODULE_TAGS := optional
-LOCAL_CHECK_ELF_FILES := false
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := android.hardware.bluetooth.audio@2.1.vendor
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_STEM := android.hardware.bluetooth.audio@2.1
-LOCAL_SRC_FILES_64 := lib64/android.hardware.bluetooth.audio@2.1.so
-LOCAL_MULTILIB := 64
-LOCAL_MODULE_TAGS := optional
-LOCAL_CHECK_ELF_FILES := false
-include $(BUILD_PREBUILT)
-
 # ----------------------------------------------------------------
 # Soundfx
 # ----------------------------------------------------------------
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := libaudiopreprocessing
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/lib64/soundfx
-LOCAL_SRC_FILES := lib64/soundfx/libaudiopreprocessing.so
-LOCAL_MULTILIB := 64
-LOCAL_MODULE_TAGS := optional
-LOCAL_CHECK_ELF_FILES := false
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := libaudiopreprocessing_32
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_STEM := libaudiopreprocessing
-LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/lib/soundfx
-LOCAL_SRC_FILES := lib/soundfx/libaudiopreprocessing.so
-LOCAL_MULTILIB := 32
-LOCAL_MODULE_TAGS := optional
-LOCAL_CHECK_ELF_FILES := false
-include $(BUILD_PREBUILT)
-
 # ----------------------------------------------------------------
 # Thermal libs
 # ----------------------------------------------------------------
