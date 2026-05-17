@@ -128,6 +128,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_CHECK_ELF_FILES := false
 include $(BUILD_PREBUILT)
 
+include $(CLEAR_VARS)
 LOCAL_MODULE := mtkfusionrild
 LOCAL_MODULE_CLASS := EXECUTABLES
 LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR_EXECUTABLES)/hw
@@ -163,7 +164,8 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_CHECK_ELF_FILES := false
 include $(BUILD_PREBUILT)
 
-# Shared Libraries — 64-bit
+# ----------------------------------------------------------------
+# Shared Libraries
 # ----------------------------------------------------------------
 
 include $(CLEAR_VARS)
@@ -185,6 +187,8 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_CHECK_ELF_FILES := false
 include $(BUILD_PREBUILT)
 
+include $(CLEAR_VARS)
+LOCAL_MODULE := libcam.halsensor
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_SRC_FILES_64 := lib64/libcam.halsensor.so
 LOCAL_MULTILIB := 64
@@ -211,6 +215,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_CHECK_ELF_FILES := false
 include $(BUILD_PREBUILT)
 
+include $(CLEAR_VARS)
 LOCAL_MODULE := libfile_op
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_SRC_FILES_64 := lib64/libfile_op.so
@@ -285,14 +290,6 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_CHECK_ELF_FILES := false
 include $(BUILD_PREBUILT)
 
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_STEM := libwifi-hal
-LOCAL_SRC_FILES_64 := lib64/libwifi-hal.so
-LOCAL_MULTILIB := 64
-LOCAL_MODULE_TAGS := optional
-LOCAL_CHECK_ELF_FILES := false
-include $(BUILD_PREBUILT)
-
 include $(CLEAR_VARS)
 LOCAL_MODULE := libwpa_client
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
@@ -300,6 +297,9 @@ LOCAL_SRC_FILES_64 := lib64/libwpa_client.so
 LOCAL_MULTILIB := 64
 LOCAL_MODULE_TAGS := optional
 LOCAL_CHECK_ELF_FILES := false
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := vendor.mediatek.hardware.nvram@1.0.vendor
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_STEM := vendor.mediatek.hardware.nvram@1.0
@@ -409,16 +409,15 @@ LOCAL_CHECK_ELF_FILES := false
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := android.hardware.thermal@2.0-impl
+LOCAL_MODULE := android.hardware.thermal@2.0-impl.karen
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_STEM := android.hardware.thermal@2.0-impl
 LOCAL_MODULE_RELATIVE_PATH := hw
 LOCAL_SRC_FILES_64 := lib64/hw/android.hardware.thermal@2.0-impl.so
 LOCAL_SRC_FILES_32 := lib/hw/android.hardware.thermal@2.0-impl.so
 LOCAL_MULTILIB := both
 LOCAL_MODULE_TAGS := optional
 LOCAL_CHECK_ELF_FILES := false
-include $(BUILD_PREBUILT)
-
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -474,8 +473,6 @@ LOCAL_MULTILIB := 64
 LOCAL_MODULE_TAGS := optional
 LOCAL_CHECK_ELF_FILES := false
 include $(BUILD_PREBUILT)
-
-
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := vendor.mediatek.hardware.bluetooth.audio@2.1-impl
@@ -534,12 +531,6 @@ LOCAL_CHECK_ELF_FILES := false
 include $(BUILD_PREBUILT)
 
 # ----------------------------------------------------------------
-# Audio HIDL libs
-# Bluetooth HIDL libs
-# ----------------------------------------------------------------
-# Soundfx
-# ----------------------------------------------------------------
-# ----------------------------------------------------------------
 # Thermal libs
 # ----------------------------------------------------------------
 
@@ -565,7 +556,7 @@ LOCAL_MODULE_TAGS := optional
 include $(BUILD_PREBUILT)
 
 # ----------------------------------------------------------------
-# ETC / Config files
+# Firmware
 # ----------------------------------------------------------------
 
 include $(CLEAR_VARS)

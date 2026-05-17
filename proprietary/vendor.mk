@@ -4,15 +4,17 @@
 PRODUCT_PACKAGES += \
     android.hardware.audio.service.mediatek \
     android.hardware.bluetooth@1.1-service-mediatek \
+    android.hardware.bluetooth@1.1-impl-mediatek \
     android.hardware.graphics.allocator@4.0-service-mediatek \
+    android.hardware.graphics.allocator@4.0-impl-mediatek \
+    android.hardware.graphics.mapper@4.0-impl-mediatek \
     android.hardware.keymaster@4.1-service.trustonic \
     android.hardware.neuralnetworks@1.3-service-mtk-neuron \
     android.hardware.sensors@2.0-service.multihal-mediatek \
     android.hardware.thermal@2.0-service.mtk \
-    android.hardware.bluetooth@1.1-impl-mediatek \
-    android.hardware.graphics.mapper@4.0-impl-mediatek \
-    android.hardware.graphics.allocator@4.0-impl-mediatek \
-    android.hardware.thermal@2.0-impl \
+    android.hardware.thermal@2.0-impl.karen \
+    android.hardware.bluetooth.audio@2.1-impl \
+    android.hardware.bluetooth.audio@2.2-impl \
     audio.primary.mt6893 \
     camerahalserver \
     ccci_mdinit \
@@ -56,4 +58,4 @@ PRODUCT_PACKAGES += \
     vendor.trustonic.tee@1.0.vendor \
     vendor.trustonic.tee@1.1.vendor \
     vendor.trustonic.tee.tui@1.0.vendor \
-    vulkan.mali \
+    vulkan.mali
