@@ -41,7 +41,6 @@ PRODUCT_PACKAGES += \
     libnvram \
     libnvram_sec \
     libthermalalgo \
-    libwpa_client \
     mcDriverDaemon \
     mtkfusionrild \
     nvram_daemon \
